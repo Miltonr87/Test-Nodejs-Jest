@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest -- watch *.js"
   },
   "repository": "https://github.com/Miltonr87/Jest-React-Redux.git",
   "author": "Milton Rodrigues <miltonrodrigues713@gmail.com>",
