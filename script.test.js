@@ -1,7 +1,6 @@
-const { expect } = require('@jest/globals');
 const googleSearch = require('./script');
 
-googleDatabaseMock = [
+dbMock = [
     'Pastrano',
     'Volta Redonda',
     'Esquerdinha',
@@ -11,8 +10,13 @@ googleDatabaseMock = [
 ]
 
 it('this is a test', () => {
-    expect('hello').toBe('noo');
+    expect('hello').toBe('hello');
 });
+
+it('is searching google', () => {
+    expect(googleSearch('caveira', dbMock)).toEqual([]);
+    expect(googleSearch('Pela', dbMock)).toEqual(['Peladeiros']);
+})
 
 
 // para usar o dabatabase precisamos usar uma injeção de dependência com um Mock, nesse caso de times inventados.
